@@ -56,23 +56,23 @@ h2 {
   width: 125px;
 }
 
-ul.nav {
+.nav ul {
   margin: 11.36% 3.78% 0 0;
   list-style: none;
   float: right;
 }
 
-ul.nav li {
+.nav ul li {
   float: left;
-  margin-left: 11.36%;
+  margin-left: 75px;
 }
 
-ul.nav li a {
+.nav ul li a {
   font-size: 1em;
   color: #B2CC99;
 }
 
-ul.nav li a:hover {
+.nav ul li a:hover {
   color: #D54C4A;
 }
 
@@ -85,6 +85,7 @@ ul.nav li a:hover {
   padding: 1%;
   border: 2px #B2CC99 solid;
   border-radius: 140px;
+
 }
 
 #my-blurp {
@@ -134,7 +135,7 @@ ul.nav li a:hover {
 
 #photos img {
   outline: 2px solid #707070;
-  margin: 2% 1%;
+  margin: 19px 10px;
 }
 
 #quirky {
@@ -197,4 +198,121 @@ ul.nav li a:hover {
 }
 
 
+/*media queries*/
 
+@media screen and (max-width: 1115px) {
+  .grid_4, .grid_8 {
+    width: 100%;
+    text-align: center;
+  }
+
+  #intro {
+    height: 750px;
+  }
+
+  #logo img {
+    text-align: center;
+    max-width: 300px;
+    width: 100%;
+    margin: 5% 0 -8% 0;
+  }
+  
+  .nav ul {
+    float: none;
+    margin: 10% 0 -5% 0;
+  }
+  .nav ul li {
+    display: inline;
+    padding: 5%;
+    float: center;
+    margin: auto;
+  }
+
+  #photos img {
+    width: 95%;
+  }
+
+  #photos .grid_5 img {
+    margin: 4.5% 0;
+  }
+
+
+}
+
+
+@media screen and (max-width: 640px) {
+  .grid_1,
+  .grid_2,
+  .grid_3,
+  .grid_5,
+  .grid_6,
+  .grid_7,
+  .grid_9,
+  .grid_10,
+  .grid_11,
+  .grid_12 {
+    width: 100%;
+  }
+
+  #intro {
+    height: 800px;
+  }
+
+  #photos .grid_5 img {
+    width: 45%;
+    margin: 0 2.3% 3% 2.3%;
+  }
+
+  .nav ul li {
+    float: left;
+    margin: 5% 5% 0 2%;
+    padding: 0;
+  }
+
+  .nav ul  li.about {
+    width: 20%;
+    text-align: left;
+    /*float: left;*/
+  }
+  .nav ul  li.portfolio {
+    width: 30%;
+    text-align: center;
+  }
+  .nav ul  li.blog {
+    width: 25%;
+    text-align: right;
+  }
+  .nav ul li.contact {
+    width: 92%;
+    margin: 5% 0 0 0;
+    padding: 5% 0;
+    background: #D54C4A;
+  }
+
+  .nav ul li.contact:hover {
+    width: 92%;
+    margin: 5% 0 0 0;
+    padding: 5% 0;
+    background: #B2CC99;
+  }
+
+  .nav ul li.contact a {
+    color: #FFFFFF;
+  }
+
+}
+
+
+
+@media screen and (max-width: 450px) {
+
+  #intro {
+    height: 875px;
+  }
+
+  #photos .grid_5 img {
+    width: 95%;
+   margin: 0 2.3% 5% 2.3%;
+  }
+
+}
