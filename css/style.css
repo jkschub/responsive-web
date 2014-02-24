@@ -254,8 +254,12 @@ h2 {
     width: 100%;
   }
 
+  #logo img {
+    width: 40%;
+  }
+
   #intro {
-    height: 800px;
+    height: 900px;
   }
 
   #photos .grid_5 img {
